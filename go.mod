@@ -1,3 +1,3 @@
-module sgmdlt/hexletcode
+module hexletcode
 
 go 1.19

@@ -1,6 +1,6 @@
 package main
 
-import braingames "sgmdlt/hexletcode/brain-games"
+import braingames "hexletcode/brain-games"
 
 func main() {
 	braingames.WelcomeUser()
