@@ -1,4 +1,4 @@
-package even_game
+package evengame
 
 import (
 	"fmt"
