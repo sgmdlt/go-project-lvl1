@@ -6,6 +6,7 @@ import (
 	calcgame "hexletcode/brain-games/calc_game"
 	evengame "hexletcode/brain-games/even_game"
 	gcdgame "hexletcode/brain-games/gcd_game"
+	primegame "hexletcode/brain-games/prime_game"
 	proggame "hexletcode/brain-games/progression_game"
 )
 
@@ -17,6 +18,7 @@ func main() {
 	fmt.Println("3 - Calc")
 	fmt.Println("4 - GCD")
 	fmt.Println("5 - Progression")
+	fmt.Println("6 - Prime")
 	var choice string
 	fmt.Scanln(&choice)
 	fmt.Printf("Your choice: %s\n", choice)
@@ -33,5 +35,7 @@ func main() {
 		gcdgame.Run()
 	case "5":
 		proggame.Run()
+	case "6":
+		primegame.Run()
 	}
 }
