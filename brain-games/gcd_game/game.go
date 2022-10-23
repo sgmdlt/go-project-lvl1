@@ -26,11 +26,10 @@ func game() map[string]string {
 	first := rand.Intn(max) + min
 	second := rand.Intn(max) + min
 
-	question := fmt.Sprintf("Question: %d %d", first, second)
-	gameData := make(map[string]string)
-
+	question := fmt.Sprintf("%d %d", first, second)
 	answer := fmt.Sprintf("%d", gcd(first, second))
 
+	gameData := make(map[string]string)
 	gameData["question"] = question
 	gameData["correctAnswer"] = answer
 	return gameData

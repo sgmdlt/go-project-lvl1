@@ -1,4 +1,4 @@
-package evengame
+package even_game
 
 import (
 	"fmt"
@@ -22,7 +22,6 @@ func game() map[string]string {
 
 	question := fmt.Sprintf("%d", num)
 	var answer string
-	gameData := make(map[string]string)
 
 	if isEven(num) {
 		answer = "yes"
@@ -30,6 +29,7 @@ func game() map[string]string {
 		answer = "no"
 	}
 
+	gameData := make(map[string]string)
 	gameData["question"] = question
 	gameData["correctAnswer"] = answer
 	return gameData
