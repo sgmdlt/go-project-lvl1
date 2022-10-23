@@ -1,4 +1,4 @@
-package calc_game
+package calcgame
 
 import (
 	"fmt"
