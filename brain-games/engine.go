@@ -7,6 +7,7 @@ const tries = 3
 func Engine(game func() map[string]string, description string) {
 	var userAnswer string
 	username := WelcomeUser()
+	fmt.Println(description)
 
 	for i := 0; i < tries; i++ {
 		gameData := game()
